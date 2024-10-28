@@ -513,3 +513,9 @@ def showParticipant(request, exam_id):
         'participant': participant
     }
 
+# def showParticipant(request, exam_id):
+#     exam = Exam.objects.get(id = exam_id)
+#     participant = AttemptedExam.objects.filter(exam_id=exam_id)
+#     context = {
+#         'participant': participant
+#     
